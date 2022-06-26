@@ -11,7 +11,7 @@ public class ZombieScript : MonoBehaviour
     private Animator anim;
     private Transform tranformZombie;
     private bool isDie;
-    public int health = 5;
+    public int health = 5, price_for_kill;
     [HideInInspector] public static int money;
 
     void Start()
@@ -54,7 +54,7 @@ public class ZombieScript : MonoBehaviour
         if (health <= 0 && !isDie)
         {
             isDie = true;
-            money++;//изменить на ценность зомби
+            money+= price_for_kill;//изменить на ценность зомби
             PlayerPrefs.SetInt("moneys", money);
             setAnim(idle: true);
             Invoke("SpawnBottle", 1.9f);

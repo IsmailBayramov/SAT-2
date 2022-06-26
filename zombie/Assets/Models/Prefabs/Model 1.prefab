@@ -99,7 +99,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Bottle: {fileID: 6288468010171741723, guid: 7b4e624641f6040b787b936930c62de5, type: 3}
   blood: {fileID: 6195921953376119723}
+  agent: {fileID: 0}
   health: 5
+  price_for_kill: 1
 --- !u!54 &3084181810533657869
 Rigidbody:
   m_ObjectHideFlags: 0

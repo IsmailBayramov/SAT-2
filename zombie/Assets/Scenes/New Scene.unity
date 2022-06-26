@@ -825,6 +825,7 @@ MonoBehaviour:
   blood: {fileID: 6195921953376119723, guid: 6b9d3e2eecf244b8892c01b332dcb4e9, type: 3}
   agent: {fileID: 1561020313}
   health: 50
+  price_for_kill: 25
 --- !u!195 &1561020313
 NavMeshAgent:
   m_ObjectHideFlags: 0
